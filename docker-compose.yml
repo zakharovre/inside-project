@@ -21,7 +21,7 @@ services:
     container_name: inside-app
     image: zakharovre/inside-project:latest
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-inside:5555/postgres?currentSchema=public
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-inside:5555/postgres
     depends_on:
       - postgres-inside
     expose:
